@@ -82,6 +82,8 @@ def main():
             (135, 90, "Right"),
             (90, 45, "Down"),
             (90, 135, "Up"),
+            (90, 60, "Down"),
+            (90, 100, "Up"),
             (90, 90, "Center again"),
         ]
         
@@ -90,11 +92,7 @@ def main():
             send_servo_command(ser, x, y)
             time.sleep(1)
         
-        print("\n✓ Test complete! Your servos should have moved.")
-        print("If they didn't move, check:")
-        print("  1. Servo wiring to Arduino pins")
-        print("  2. Power supply to servos")
-        print("  3. Pin numbers in Arduino code match your setup")
+        print("\n✓ Test complete! Servos should have moved.")
         
     except KeyboardInterrupt:
         print("\n\nTest interrupted by user")
