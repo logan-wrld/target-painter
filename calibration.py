@@ -31,10 +31,10 @@ class LaserCalibrator:
         print("Connected to Arduino!")
         
         # Calibration values
-        self.x_servo_min = 0
-        self.x_servo_max = 180
-        self.y_servo_min = 0
-        self.y_servo_max = 180
+        self.x_servo_min = 150
+        self.x_servo_max = 85
+        self.y_servo_min = 80
+        self.y_servo_max = 115
         
     def point_laser(self, servo_x, servo_y):
         """Send servo angles to Arduino"""
