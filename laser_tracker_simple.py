@@ -16,11 +16,11 @@ import serial.tools.list_ports
 CAMERA_INDEX = 0
 DETECTION_MODE = "bright"  # Options: "bright", "red", "green", "blue"
 
-# CALIBRATION VALUES - Adjusted to fix laser pointing too low
-X_SERVO_MIN = 150  # Swapped back to reverse direction
-X_SERVO_MAX = 80   # Swapped back to reverse direction
-Y_SERVO_MIN = 50   # Increased from 35 to move laser up
-Y_SERVO_MAX = 125  # Increased from 110 to move laser up
+# CALIBRATION VALUES - Shifted laser left by a few inches
+X_SERVO_MIN = 130  # Increased by 15 to shift laser left (was 120)
+X_SERVO_MAX = 65   # Increased by 15 to shift laser left (was 60)
+Y_SERVO_MIN = 35   # Increased significantly to move laser up (was 45)
+Y_SERVO_MAX = 135  # Increased significantly to move laser up (was 115)
 # ===================================
 
 def find_arduino():
