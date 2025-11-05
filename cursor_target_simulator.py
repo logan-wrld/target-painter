@@ -15,10 +15,10 @@ import serial.tools.list_ports
 CAMERA_INDEX = 0
 
 # CALIBRATION VALUES - SAFE LIMITS to prevent servo burnout
-X_SERVO_MIN = 120
+X_SERVO_MIN = 105
 X_SERVO_MAX = 60
-Y_SERVO_MIN = 45   # Increased from 35 for safety
-Y_SERVO_MAX = 125  # Decreased from 135 for safety
+Y_SERVO_MIN = 0   # Increased from 35 for safety
+Y_SERVO_MAX = 60  # Decreased from 135 for safety
 
 # SAFETY SETTINGS
 MIN_MOVE_DELAY = 0.05  # Minimum delay between servo commands (50ms)
@@ -156,9 +156,9 @@ class CursorTargetSimulator:
         print("  'q' - Quit")
         print("")
         if self.laser_enabled:
-            print("✅ Laser connected - laser will follow cursor")
+            print("Laser connected - laser will follow cursor")
         else:
-            print("⚠️  No laser - simulation mode only")
+            print(" No laser - simulation mode only")
         print("="*50)
         
         cv2.namedWindow('Cursor Target Simulator')

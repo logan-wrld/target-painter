@@ -17,10 +17,10 @@ CAMERA_INDEX = 0
 DETECTION_MODE = "bright"  # Options: "bright", "red", "green", "blue"
 
 # CALIBRATION VALUES - Shifted laser left by a few inches
-X_SERVO_MIN = 130  # Increased by 15 to shift laser left (was 120)
+X_SERVO_MIN = 105  # Increased by 15 to shift laser left (was 120)
 X_SERVO_MAX = 65   # Increased by 15 to shift laser left (was 60)
-Y_SERVO_MIN = 35   # Increased significantly to move laser up (was 45)
-Y_SERVO_MAX = 135  # Increased significantly to move laser up (was 115)
+Y_SERVO_MIN = 10   # Increased significantly to move laser up (was 45)
+Y_SERVO_MAX = 60  # Increased significantly to move laser up (was 115)
 # ===================================
 
 def find_arduino():
