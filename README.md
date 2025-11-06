@@ -3,6 +3,9 @@ The code in this repo captures frames from a webcam, detects a target (bright sp
 
 How it works (3 steps)
 
-Capture: read frames from the configured webcam.
-Detect: find the target (bright spot or red/green/blue blob) and compute its pixel coordinates.
-Act: convert pixels → servo angles using calibration, then send "X:<angle> Y:<angle>" over serial to the Arduino.
+- Capture: read frames from the configured webcam.
+- Detect: find the target (bright spot or red/green/blue blob) and compute its pixel coordinates.
+- Act: convert pixels → servo angles using calibration, then send "X:<angle> Y:<angle>" over serial to the Arduino.
+
+The parts for this project are saved within "parts.csv"
+
